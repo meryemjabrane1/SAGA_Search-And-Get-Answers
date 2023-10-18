@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;900&display=swap");
+* {
+  border-radius: 0 !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* CSS Buttons ---------------------------------- */
+.btn-outline-light {
+  font-family: 'Lexend Exa', sans-serif;
+  font-size: 1.5rem;
+  border: 1.5px solid;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #cff6c8;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: 'Lexend Exa', sans-serif;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+#myBtn:hover {
+    background-color: rgb(146, 190, 255);
+}
+/* ---------------------------------------------- */
+.nav{
+  font-family: Arial, Helvetica, sans-serif!;
+}
+.buttonAdmin {
+  border-radius: 0;
+  background-color: #1f6d3d;
+  color: #fff;
+  font-family: "Unbounded", cursive;
+  padding: 10px 150px 10px 150px;
+  border-width: 0;
+}
+body {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Unbounded", cursive !important;
+}
+.titleQ {
+  font-size: 150px;
+  text-align: center;
+}
+.TitleCla{
+  padding: 0rem 6rem 0rem 6rem;
+}
+input {
+  font-size: 1rem;
+}
+.QuestionCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+:root {
+  --radius: 12px;
+  --primary-color: #34965a;
+  --secondary-color: #462410;
+}
+.card {
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.border-gradient {
+  position: relative;
+}
+
+.border-gradient:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: var(--radius);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.card > .header {
+  margin-bottom: 0.25rem;
+}
+.card > .body {
+  font-size: 0.8rem;
+  color: #777;
+}
+.hide {
+  display: none;
+}
+.SearchQuestions {
+  position: relative;
+  width: 100%;
+  max-width: 60px;
+  height: 55px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+
+  transition: all 0.5s ease-in-out;
+}
+.SearchQuestions.open {
+  max-width: 309px;
+}
+.SearchQuestions input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  padding: 0 15px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+.SearchQuestions.open input {
+  padding: 0 15px 0 65px;
+}
+
+.SearchQuestions .search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.SearchQuestions.open .search {
+  border-radius: 6px 0 0 6px;
+}
+.search .search-icon {
+  font-size: 30px;
+  color: #1c1c1c;
+}
+.SearchQuestions .close-icon {
+  position: absolute;
+  top: 50%;
+  right: -45px;
+  font-size: 30px;
+  color: #1c1c1c;
+  padding: 5px;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+.SearchQuestions.open .close-icon {
+  transform: translateY(-50%) rotate(180deg);
+  pointer-events: auto;
+  opacity: 1;
+}
+.title {
+  text-align: center;
+  font-size: 55px;
+  line-height: 70px;
+  font-weight: 650;
+  padding: 60px 30px;
+}
+
+.faq-container {
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+details {
+  margin-bottom: 45px;
+}
+
+details > summary {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+details > p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+  color: #545d7a;
+}
+a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 600;
+}
+.FancyLink {
+  position: relative;
+  display: inline-block;
+}
+.FancyLink:after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid blue;
+  top: 100%;
+  transition: all 0.4s;
+}
+.FancyLink:after {
+  right: 100%;
+  left: 0;
+}
+.FancyLink:hover:after {
+  right: 0;
+}
+ 
+.search-form {
+	display: block;
+	justify-content: center;
+	margin-bottom: 1rem;
+  margin-left: auto;
+	margin-right: auto;
+  }
+  
+  #search-input {
+	padding: 0.5rem;
+	margin-right: 0.5rem;
+	border-radius: 0.25rem;
+	border: 3px solid green;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  }
+  
+  .btn {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 0.25rem;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+  }
+  
+  .btn:hover {
+	background-color: #0069d9;
+  }
+
+.about{
+  background-color: #eeeeff;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 6rem;
+  padding: 6rem 3rem 1.5rem 3rem;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.posts-list{
+  padding: 1rem 2rem 8rem 2rem;
+}
+
+.TitleCla{
+    padding: 0rem 6rem 0rem 6rem;
+  }
