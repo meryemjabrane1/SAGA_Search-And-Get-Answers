@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;900&display=swap");
+* {
+  font-family: "Unbounded", cursive;
+  border-radius: 0 !important;
+}
+.buttonAdmin {
+  border-radius: 0;
+  background-color: #1f6d3d;
+  color: #fff;
+  font-family: "Unbounded", cursive;
+  padding: 10px 150px 10px 150px;
+  border-width: 0;
+}
+
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  
+}
+input {
+  font-size: 1rem;
+}a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 600;
+}
+.container{
+	position: relative;
+	background-color: #eeeeff;
+	margin: 3rem 40rem 3rem 40rem;
+	padding-top: 3rem;
+	padding-bottom: 1.5rem;
+	padding-right: 3rem !important;
+	padding-left: 3rem !important;
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+	  rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
+#email_error{
+  text-align: center;
+  margin: 0 auto;
+}
+#pass_error{
+  text-align: center;
+  margin: 0 auto;
+}
+.label{
+	padding: 20px 36px;
+	margin: 0 auto;
+	font-size: 35px;
+	font-weight: bold;
+	color: rgb(10, 61, 41);
+}
+.login_form{
+	padding: 30px 40px;
+}
+.login_form .font{
+	font-size: 18px;
+	color: rgb(2, 3, 2);
+	margin: 5px 0;
+}
+.login_form input{
+	height: 45px;
+	width: 350px;
+	padding: 0 5px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid rgb(236, 233, 233);
+}
+.login_form .font2{
+	margin-top: 30px;
+}
+.login_form button{
+	margin: 45px 0 25px 0;
+	height: 45px;
+	width: 350px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: rgb(4, 63, 4);
+	border-radius: 0px;
+	border: 1px solid #3949AB;
+	transition: .5s;
+}
+.login_form button:hover{
+	background: rgb(4, 63, 4);
+}
+
+.login_form #email_error,
+.login_form #pass_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 0px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}  
+ 

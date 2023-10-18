@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;900&display=swap");
+* {
+  font-family: "Unbounded", cursive;
+  border-radius: 0 !important;
+  transition: ease;
+}
+html {
+	scroll-behavior: smooth;
+  }
+.buttonAdmin {
+  border-radius: 0;
+  background-color: #1f6d3d;
+  color: #fff;
+  font-family: "Unbounded", cursive;
+  padding: 10px 150px 10px 150px;
+  border-width: 0;
+}
+/* CSS Buttons ---------------------------------- */
+.btn-outline-light {
+	font-family: 'Lexend Exa', sans-serif;
+	font-size: 1.5rem;
+	border: 1.5px solid;
+  }
+  #myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #7ca836;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	font-family: 'Lexend Exa', sans-serif;
+	padding: 15px;
+	border-radius: 100%;
+  }
+  
+  #myBtn:hover {
+	  background-color: rgb(23, 85, 178);
+  }
+  /* ---------------------------------------------- */
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+input {
+  font-size: 1rem;
+}a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 600;
+}
+.container{
+  position: relative;
+  background-color: #eeeeff;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 40rem;
+  margin-right: 40rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	border-radius: 0px;
+}
+
+.card {
+	padding: 3rem 1.5rem 1.5rem 1.5rem;
+	background-color: rgb(255, 255, 255);
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+	  rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
+
+.posts-list{
+  padding: 1rem 2rem 8rem 2rem;
+  border-radius: 0px;
+}
+#email_error{
+  text-align: center;
+  margin: 0 auto;
+}
+#pass_error{
+  text-align: center;
+  margin: 0 auto;
+}
+.label{
+	padding: 20px 130px;
+	font-size: 35px;
+	font-weight: bold;
+	color: rgb(10, 61, 41);
+}
+.login_form{
+	padding: 30px 40px;
+}
+.login_form .font{
+	font-size: 18px;
+	color: rgb(2, 3, 2);
+	margin: 5px 0;
+}
+.login_form input{
+	height: 45px;
+	width: 350px;
+	padding: 0 5px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid rgb(236, 233, 233);
+}
+.login_form .font2{
+	margin-top: 30px;
+}
+.login_form button{
+	margin: 45px 0 25px 0;
+	height: 45px;
+	width: 350px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: rgb(4, 63, 4);
+	border-radius: 0px;
+	border: 1px solid #3949AB;
+	transition: .5s;
+}
+.login_form button:hover{
+	background: rgb(4, 63, 4);
+}
+
+.login_form #email_error,
+.login_form #pass_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 0px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}  
+ 
+.search-form {
+	display: block;
+	justify-content: center;
+	margin-bottom: 1rem;
+  margin-left: auto;
+	margin-right: auto;
+  }
+  
+  #search-input {
+	padding: 0.5rem;
+	margin-right: 0.5rem;
+	border-radius: 0.25rem;
+	border: 3px solid rgb(0, 118, 186);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  }
+  
+  
+  .btn {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 0.25rem;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+  }
+  
+  .btn:hover {
+	background-color: #0069d9;
+  }
